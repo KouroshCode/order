@@ -177,7 +177,7 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
   const details = document.getElementById("details").value;
 
   try {
-    const response = await fetch("server.js", { // آدرس سرور واقعی
+      const response = await fetch("https://tg-orders-server.onrender.com/send-order", {  // آدرس سرور واقعی 
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, site, details })
@@ -197,3 +197,4 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
 
 </body>
 </html>
+
