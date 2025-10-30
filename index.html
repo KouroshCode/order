@@ -225,7 +225,7 @@
     <a href="http://instagram.com/kourosh.btc" target="_blank">Kourosh</a>
   </footer>
 
-  <script>
+ <script>
 document.getElementById("orderForm").addEventListener("submit", async function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value;
@@ -233,7 +233,7 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
   const details = document.getElementById("details").value;
 
   try {
-    const response = await fetch("https://tg-orders-server.onrender.com/send-order", { // آدرس سرور واقعی
+   const response = await fetch("https://tg-orders-server.onrender.com/send-order", { // آدرس سرور واقعی
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, site, details })
@@ -251,8 +251,10 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
 });
 </script>
 
+  
 </body>
 </html>
+
 
 
 
