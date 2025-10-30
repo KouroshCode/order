@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Designed Websites — Portfolio</title>
+  <title>Portfolio — My Designed Websites</title>
   <style>
     :root {
       --bg: #0b0f14;
@@ -11,46 +11,31 @@
       --accent: #5eead4;
       --muted: #a0aab8;
       --radius: 14px;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      --shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
+      font-family: "Inter", sans-serif;
       background: var(--bg);
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
       color: #e6eef6;
       min-height: 100vh;
+      direction: rtl;
     }
-
     header {
       text-align: center;
       padding: 60px 20px 20px;
     }
-
-    header h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      color: var(--muted);
-      font-size: 14px;
-      margin: 0;
-    }
-
+    header h1 { font-size: 28px; margin-bottom: 8px; }
+    header p { color: var(--muted); font-size: 14px; margin:0; }
     main {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
       gap: 24px;
       padding: 40px 20px 60px;
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .card {
       background: var(--card);
       border-radius: var(--radius);
@@ -58,34 +43,14 @@
       box-shadow: var(--shadow);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
     }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-content {
-      padding: 16px;
-    }
-
-    .card-content h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .card-content p {
-      margin: 8px 0 16px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
+    .card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .card-content { padding: 16px; }
+    .card-content h3 { margin:0; font-size:18px; }
+    .card-content p { margin:8px 0 16px; color: var(--muted); font-size:14px; }
     .card-content a {
       background: linear-gradient(135deg, var(--accent), #3b82f6);
       color: #041014;
@@ -96,33 +61,27 @@
       display: inline-block;
       transition: opacity 0.2s ease;
     }
+    .card-content a:hover { opacity:0.85; }
 
-    .card-content a:hover {
-      opacity: 0.85;
-    }
-
-    /* ORDER SECTION */
+    /* ORDER FORM */
     section#order {
       background: var(--card);
       margin: 40px auto;
       padding: 40px 20px;
-      max-width: 600px;
+      max-width: 700px;
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-
     section#order h2 {
       text-align: center;
       margin-bottom: 20px;
       font-size: 22px;
     }
-
     form {
       display: flex;
       flex-direction: column;
       gap: 15px;
     }
-
     input, textarea {
       padding: 12px;
       border-radius: 10px;
@@ -132,7 +91,6 @@
       font-size: 15px;
       resize: none;
     }
-
     button {
       background: linear-gradient(135deg, var(--accent), #3b82f6);
       color: #041014;
@@ -143,67 +101,51 @@
       cursor: pointer;
       transition: opacity 0.2s ease;
     }
-
-    button:hover {
-      opacity: 0.85;
-    }
-
-    #status {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 8px;
-    }
+    button:hover { opacity:0.85; }
+    #status { text-align:center; margin-top:8px; font-size:14px; color:#5eead4; }
 
     footer {
       text-align: center;
       color: var(--muted);
       padding: 30px 10px;
       font-size: 13px;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+    footer a { color: var(--accent); text-decoration: none; }
   </style>
 </head>
-
 <body>
 
   <header>
-    <h1>My Designed Websites</h1>
-    <p>Showcase of websites I have designed — click to view live demos.</p>
+    <h1>وبسایت‌های طراحی شده من</h1>
+    <p>نمونه کارهای من — برای دیدن نسخه زنده کلیک کنید.</p>
   </header>
 
   <main>
-    <!-- Project 1 -->
     <div class="card">
       <img src="first.jpg" alt="Project 1 preview">
       <div class="card-content">
         <h3>نمونه سایت اول</h3>
         <p>یک نمونه برای آرایشگاه زنانه.</p>
-        <a href="https://kouroshcode.github.io/barbershop/" target="_blank">View Site</a>
+        <a href="https://kouroshcode.github.io/barbershop/" target="_blank">مشاهده سایت</a>
       </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="card">
       <img src="second.png" alt="Project 2 preview">
       <div class="card-content">
-        <h3>Project Two</h3>
-        <p>E-commerce homepage layout for clothing brand.</p>
-        <a href="https://kouroshcode.github.io/chapkhoneh/" target="_blank">View Site</a>
+        <h3>نمونه سایت دوم</h3>
+        <p>صفحه اصلی فروشگاه پوشاک.</p>
+        <a href="https://kouroshcode.github.io/chapkhoneh/" target="_blank">مشاهده سایت</a>
       </div>
     </div>
 
-    <!-- Project 3 -->
     <div class="card">
       <img src="preview3.jpg" alt="Project 3 preview">
       <div class="card-content">
-        <h3>Project Three</h3>
-        <p>Creative portfolio design with smooth animations.</p>
-        <a href="https://example.com" target="_blank">View Site</a>
+        <h3>نمونه سایت سوم</h3>
+        <p>نمونه طراحی پرتفولیو با انیمیشن‌های روان.</p>
+        <a href="#" target="_blank">مشاهده سایت</a>
       </div>
     </div>
   </main>
@@ -215,17 +157,21 @@
       <input type="text" id="name" placeholder="نام شما" required>
       <input type="text" id="site" placeholder="نام سایت مورد نظر" required>
       <textarea id="details" rows="4" placeholder="توضیحات سفارش..." required></textarea>
+      <input type="text" id="telegram" placeholder="آیدی تلگرام شما (اختیاری)">
+      <input type="file" id="file">
       <button type="submit">ارسال سفارش</button>
       <p id="status"></p>
     </form>
   </section>
 
   <footer>
-    © 2025 My Portfolio — Designed & Developed by
+    © 2025 طراحی و توسعه توسط
     <a href="http://instagram.com/kourosh.btc" target="_blank">Kourosh</a>
   </footer>
 
- <script>
+این درسته؟
+
+<script>
 document.getElementById("orderForm").addEventListener("submit", async function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value;
@@ -251,10 +197,5 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
 });
 </script>
 
-  
 </body>
 </html>
-
-
-
-
